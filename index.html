@@ -65,26 +65,28 @@ nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-b
 .section-tag{display:inline-block;background:var(--teal);color:var(--white);font-size:0.7rem;font-weight:700;letter-spacing:0.18em;padding:0.3rem 0.9rem;border-radius:2px;margin-bottom:0.8rem}
 .section-title{font-weight:900;font-size:1.6rem;color:var(--teal-deeper)}
 .section-sub{font-size:0.85rem;color:var(--muted);margin-top:0.5rem;font-weight:300}
-.prod-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
-.prod-card{background:var(--white);border-radius:10px;overflow:hidden;border:1.5px solid var(--teal-pale);transition:all 0.25s}
-.prod-card:hover{border-color:var(--teal);box-shadow:0 6px 20px rgba(59,191,191,0.15);transform:translateY(-3px)}
-.prod-thumb{height:150px;display:flex;align-items:center;justify-content:center}
-.prod-thumb-1{background:linear-gradient(135deg,#2A9A9A,#3BBFBF)}
-.prod-thumb-2{background:linear-gradient(135deg,#1E7A7A,#2A9A9A)}
-.prod-thumb-3{background:linear-gradient(135deg,#3BBFBF,#5CCFCF)}
-.prod-thumb-4{background:linear-gradient(135deg,#1A6A6A,#2A9A9A)}
-.prod-thumb-5{background:linear-gradient(135deg,#158080,#1E9A9A)}
-.prod-thumb svg{width:70px;height:70px}
-.prod-body{padding:1.2rem 1.3rem}
-.prod-name{font-weight:700;font-size:1rem;color:var(--teal-deeper);margin-bottom:0.3rem}
-.prod-sub{font-size:0.75rem;color:var(--muted);margin-bottom:0.5rem;font-weight:300}
-.prod-desc{font-size:0.82rem;color:var(--muted);line-height:1.7;font-weight:300}
-.prod-footer{display:flex;align-items:center;justify-content:space-between;margin-top:1rem;padding-top:0.8rem;border-top:1px solid var(--teal-pale)}
-.prod-tag{background:var(--teal-pale);color:var(--teal-deeper);font-size:0.68rem;font-weight:700;padding:0.2rem 0.7rem;border-radius:20px;letter-spacing:0.06em}
-.prod-link{display:inline-flex;align-items:center;gap:0.3rem;background:var(--teal);color:var(--white);font-size:0.75rem;font-weight:700;padding:0.4rem 0.9rem;border-radius:20px;text-decoration:none;transition:background 0.2s;white-space:nowrap}
-.prod-link:hover{background:var(--teal-dark)}
-.prod-note{text-align:center;margin-top:1.5rem;font-size:0.82rem;color:var(--muted);font-weight:300}
+.cat-list{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:0}
+.cat-row{display:grid;grid-template-columns:200px 1fr auto;align-items:center;gap:1.5rem;padding:1.2rem 0;border-bottom:1px solid var(--teal-pale)}
+.cat-row:last-child{border-bottom:none}
+.cat-info{display:flex;align-items:center;gap:1rem}
+.cat-icon-big{font-size:2rem;flex-shrink:0}
+.cat-name{font-weight:700;font-size:0.95rem;color:var(--teal-deeper)}
+.cat-sub{font-size:0.72rem;color:var(--muted);margin-top:0.2rem;font-weight:300}
+.cat-photos{display:flex;gap:0.6rem}
+.cat-photos-empty{color:var(--muted);font-size:0.78rem;font-style:italic}
+.photo-item{width:100px;height:100px;overflow:hidden;border-radius:8px;cursor:pointer;flex-shrink:0}
+.photo-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s}
+.photo-item:hover img{transform:scale(1.06)}
+.see-all-btn{display:inline-flex;align-items:center;gap:0.4rem;background:var(--teal);color:var(--white);font-size:0.75rem;font-weight:700;padding:0.5rem 1rem;border-radius:20px;text-decoration:none;white-space:nowrap;transition:background 0.2s;flex-shrink:0}
+.see-all-btn:hover{background:var(--teal-dark)}
+.prod-note{text-align:center;margin-top:2rem;font-size:0.82rem;color:var(--muted);font-weight:300}
 .prod-note strong{color:var(--teal);font-weight:700}
+.lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.9);z-index:999;align-items:center;justify-content:center}
+.lb.open{display:flex}
+.lb img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:4px}
+.lb-close{position:absolute;top:1.2rem;right:1.5rem;color:white;font-size:2rem;cursor:pointer;line-height:1}
+.lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%);color:white;font-size:2.5rem;cursor:pointer;padding:0.5rem 1rem;background:rgba(255,255,255,0.1);border-radius:4px;user-select:none}
+.lb-prev{left:1rem}.lb-next{right:1rem}
 
 .why{background:var(--white);padding:4rem 2rem}
 .why-grid{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
@@ -115,7 +117,9 @@ footer{background:var(--teal-deeper);padding:1.5rem 2.5rem;display:flex;justify-
   .nav-links{display:none}
   .trust-inner{grid-template-columns:repeat(2,1fr)}
   .intro-inner{grid-template-columns:1fr;gap:2rem}
-  .prod-grid{grid-template-columns:1fr}
+  .cat-row{grid-template-columns:1fr;gap:0.8rem}
+  .cat-photos{flex-wrap:wrap}
+  .photo-item{width:80px;height:80px}
   .why-grid{grid-template-columns:1fr}
   footer{flex-direction:column;text-align:center}
 }
@@ -163,12 +167,12 @@ footer{background:var(--teal-deeper);padding:1.5rem 2.5rem;display:flex;justify-
 <section class="trust">
   <div class="trust-inner">
     <div class="trust-item">
-      <div class="trust-num">20+</div>
+      <div class="trust-num">25+</div>
       <div class="trust-label">年在地深耕<br>老顧客信賴</div>
     </div>
     <div class="trust-item">
-      <div class="trust-num">2</div>
-      <div class="trust-label">人親自經營<br>服務不假手他人</div>
+      <div class="trust-num">100+</div>
+      <div class="trust-label">位回頭老客人<br>口耳相傳的口碑</div>
     </div>
     <div class="trust-item">
       <div class="trust-num">批發</div>
@@ -217,119 +221,115 @@ footer{background:var(--teal-deeper);padding:1.5rem 2.5rem;display:flex;justify-
   <div class="section-header">
     <div class="section-tag">商品分類</div>
     <h2 class="section-title">店內品項</h2>
-    <p class="section-sub">點「查看照片」可瀏覽實品圖，更多款式歡迎來店看實品</p>
+    <p class="section-sub">點照片可放大瀏覽，更多款式歡迎來店看實品</p>
   </div>
-  <div class="prod-grid">
+  <div class="cat-list">
 
-    <div class="prod-card">
-      <div class="prod-thumb prod-thumb-1">
-        <svg viewBox="0 0 70 70" fill="none">
-          <circle cx="35" cy="22" r="4" fill="white" opacity="0.8"/>
-          <line x1="20" y1="26" x2="50" y2="26" stroke="white" stroke-width="1.2" opacity="0.6"/>
-          <line x1="28" y1="20" x2="28" y2="26" stroke="white" stroke-width="0.8"/>
-          <line x1="42" y1="20" x2="42" y2="26" stroke="white" stroke-width="0.8"/>
-          <path d="M20 26 L15 36 Q14 44 35 44 Q56 44 55 36 L50 26 Z" stroke="white" stroke-width="0.7" fill="rgba(255,255,255,0.1)"/>
-          <path d="M24 44 L22 56 M35 44 L35 58 M46 44 L48 56" stroke="white" stroke-width="0.6" opacity="0.5"/>
-        </svg>
+    <div class="cat-row">
+      <div class="cat-info">
+        <div class="cat-icon-big">🌀</div>
+        <div><div class="cat-name">吊扇</div><div class="cat-sub">現代款 · 傳統款</div></div>
       </div>
-      <div class="prod-body">
-        <div class="prod-name">吊扇</div>
-        <div class="prod-sub">現代款 · 傳統款</div>
-        <p class="prod-desc">兼具照明與循環風，夏天省冷氣、冬天暖空氣，台灣家庭長銷款式。</p>
-        <div class="prod-footer">
-          <span class="prod-tag">🌀 台灣家庭必備</span>
-          <a href="https://photos.app.goo.gl/w7cfLSWabaX6TPELA" target="_blank" class="prod-link">📷 查看照片</a>
-        </div>
+      <div class="cat-photos">
+        <div class="photo-item" onclick="openLB('fan',0)"><img src="images/fan/01.jpg" alt="吊扇1" loading="lazy"></div>
+        <div class="photo-item" onclick="openLB('fan',1)"><img src="images/fan/02.jpg" alt="吊扇2" loading="lazy"></div>
       </div>
+      <a href="https://photos.app.goo.gl/w7cfLSWabaX6TPELA" target="_blank" class="see-all-btn">📷 看全部</a>
     </div>
 
-    <div class="prod-card">
-      <div class="prod-thumb prod-thumb-2">
-        <svg viewBox="0 0 70 70" fill="none">
-          <rect x="20" y="16" width="30" height="5" rx="2" fill="white" opacity="0.5"/>
-          <ellipse cx="35" cy="36" rx="16" ry="12" stroke="white" stroke-width="0.8" fill="rgba(255,255,255,0.1)"/>
-          <circle cx="35" cy="36" r="6" fill="rgba(255,255,255,0.2)"/>
-          <circle cx="35" cy="36" r="3" fill="white" opacity="0.8"/>
-        </svg>
+    <div class="cat-row">
+      <div class="cat-info">
+        <div class="cat-icon-big">💡</div>
+        <div><div class="cat-name">吊燈</div><div class="cat-sub">餐桌 · 玄關 · 客廳</div></div>
       </div>
-      <div class="prod-body">
-        <div class="prod-name">吸頂燈</div>
-        <div class="prod-sub">臥室 · 廁所 · 晶片型 · 燈泡型</div>
-        <p class="prod-desc">適合各種室內空間，款式多樣，從簡約素雅到有設計感的都有。</p>
-        <div class="prod-footer">
-          <span class="prod-tag">🏠 居家必備</span>
-          <a href="https://photos.app.goo.gl/CEcHFioE1XBTdW4S7" target="_blank" class="prod-link">📷 查看照片</a>
-        </div>
+      <div class="cat-photos">
+        <div class="photo-item" onclick="openLB('pendant',0)"><img src="images/pendant/01.jpg" alt="吊燈1" loading="lazy"></div>
+        <div class="photo-item" onclick="openLB('pendant',1)"><img src="images/pendant/02.jpg" alt="吊燈2" loading="lazy"></div>
       </div>
+      <a href="https://photos.app.goo.gl/NmP2YHbKQQAK8Esn8" target="_blank" class="see-all-btn">📷 看全部</a>
     </div>
 
-    <div class="prod-card">
-      <div class="prod-thumb prod-thumb-3">
-        <svg viewBox="0 0 70 70" fill="none">
-          <rect x="14" y="18" width="5" height="30" rx="2" fill="white" opacity="0.45"/>
-          <line x1="19" y1="28" x2="30" y2="28" stroke="white" stroke-width="1.2"/>
-          <path d="M30 20 Q44 20 46 28 Q48 36 42 40 Q36 44 30 40 Q26 36 30 28 Z" stroke="white" stroke-width="0.8" fill="rgba(255,255,255,0.14)"/>
-          <line x1="35" y1="8" x2="35" y2="20" stroke="white" stroke-width="1" opacity="0.6"/>
-          <path d="M28 20 Q22 30 20 36 Q20 46 35 46 Q50 46 50 36 Q48 30 42 20 Z" stroke="white" stroke-width="0.6" fill="rgba(255,255,255,0.08)"/>
-        </svg>
+    <div class="cat-row">
+      <div class="cat-info">
+        <div class="cat-icon-big">✨</div>
+        <div><div class="cat-name">壁燈</div><div class="cat-sub">走廊 · 臥室 · 氛圍</div></div>
       </div>
-      <div class="prod-body">
-        <div class="prod-name">壁燈 · 吊燈</div>
-        <div class="prod-sub">餐桌 · 走廊 · 玄關</div>
-        <p class="prod-desc">營造空間氛圍的好幫手，款式從古典到現代都有，歡迎來店挑選。</p>
-        <div class="prod-footer">
-          <span class="prod-tag">✨ 氛圍首選</span>
-          <a href="https://photos.app.goo.gl/NmP2YHbKQQAK8Esn8" target="_blank" class="prod-link">📷 查看照片</a>
-        </div>
+      <div class="cat-photos">
+        <div class="photo-item" onclick="openLB('wall',0)"><img src="images/wall/01.jpg" alt="壁燈1" loading="lazy"></div>
+        <div class="photo-item" onclick="openLB('wall',1)"><img src="images/wall/02.jpg" alt="壁燈2" loading="lazy"></div>
       </div>
+      <a href="https://photos.app.goo.gl/k7nQegBJxU3mR2WC7" target="_blank" class="see-all-btn">📷 看全部</a>
     </div>
 
-    <div class="prod-card">
-      <div class="prod-thumb prod-thumb-4">
-        <svg viewBox="0 0 70 70" fill="none">
-          <rect x="20" y="22" width="30" height="4" rx="2" fill="white" opacity="0.5"/>
-          <circle cx="35" cy="24" r="7" fill="rgba(255,255,255,0.18)" stroke="white" stroke-width="0.8"/>
-          <circle cx="35" cy="24" r="3.5" fill="white" opacity="0.85"/>
-          <path d="M25 26 L22 52 M35 26 L35 54 M45 26 L48 52" stroke="white" stroke-width="0.5" opacity="0.35" stroke-dasharray="2,3"/>
-          <line x1="18" y1="30" x2="52" y2="30" stroke="white" stroke-width="0.4" opacity="0.3"/>
-        </svg>
+    <div class="cat-row">
+      <div class="cat-info">
+        <div class="cat-icon-big">🏠</div>
+        <div><div class="cat-name">吸頂燈</div><div class="cat-sub">臥室 · 廁所 · 晶片型 · 燈泡型</div></div>
       </div>
-      <div class="prod-body">
-        <div class="prod-name">LED 崁燈 · 投射燈 · 軌道燈</div>
-        <div class="prod-sub">節能 · 商辦 · 住宅</div>
-        <p class="prod-desc">節能省電、亮度均勻，多種色溫可選，裝潢工班、水電師傅常備款。</p>
-        <div class="prod-footer">
-          <span class="prod-tag">🔥 裝潢首選</span>
-          <a href="https://photos.app.goo.gl/hpQhJ2f6Hhk7nVUm8" target="_blank" class="prod-link">📷 查看照片</a>
-        </div>
-      </div>
+      <div class="cat-photos cat-photos-empty"><span>照片即將上線</span></div>
+      <a href="https://photos.app.goo.gl/CEcHFioE1XBTdW4S7" target="_blank" class="see-all-btn">📷 看全部</a>
     </div>
 
-    <div class="prod-card" style="grid-column:1/-1">
-      <div class="prod-thumb prod-thumb-5" style="height:120px">
-        <svg viewBox="0 0 70 70" fill="none">
-          <circle cx="35" cy="35" r="12" stroke="white" stroke-width="1" fill="rgba(255,255,255,0.1)"/>
-          <circle cx="35" cy="35" r="6" fill="rgba(255,255,255,0.2)"/>
-          <line x1="35" y1="18" x2="35" y2="24" stroke="white" stroke-width="1.2"/>
-          <line x1="35" y1="46" x2="35" y2="52" stroke="white" stroke-width="1.2"/>
-          <line x1="18" y1="35" x2="24" y2="35" stroke="white" stroke-width="1.2"/>
-          <line x1="46" y1="35" x2="52" y2="35" stroke="white" stroke-width="1.2"/>
-        </svg>
+    <div class="cat-row">
+      <div class="cat-info">
+        <div class="cat-icon-big">🔆</div>
+        <div><div class="cat-name">LED 崁燈 · 投射燈 · 軌道燈</div><div class="cat-sub">節能 · 住宅 · 商辦</div></div>
       </div>
-      <div class="prod-body">
-        <div class="prod-name">電燈泡 · 配件 · 零件</div>
-        <div class="prod-sub">各式燈泡 · 燈座 · 配線配件</div>
-        <p class="prod-desc">各式規格燈泡、零件配件齊全，水電師傅缺什麼來找我們就對了。</p>
-        <div class="prod-footer">
-          <span class="prod-tag">⚡ 水電師傅常來</span>
-          <span style="font-size:0.75rem;color:var(--muted)">照片即將上線</span>
-        </div>
+      <div class="cat-photos">
+        <div class="photo-item" onclick="openLB('led',0)"><img src="images/led/01.jpg" alt="LED1" loading="lazy"></div>
+        <div class="photo-item" onclick="openLB('led',1)"><img src="images/led/02.jpg" alt="LED2" loading="lazy"></div>
       </div>
+      <a href="https://photos.app.goo.gl/hpQhJ2f6Hhk7nVUm8" target="_blank" class="see-all-btn">📷 看全部</a>
+    </div>
+
+    <div class="cat-row">
+      <div class="cat-info">
+        <div class="cat-icon-big">⚡</div>
+        <div><div class="cat-name">電燈泡 · 配件 · 零件</div><div class="cat-sub">各式燈泡 · 燈座 · 配線配件</div></div>
+      </div>
+      <div class="cat-photos cat-photos-empty"><span>照片即將上線</span></div>
     </div>
 
   </div>
   <p class="prod-note">以上僅為部分品項 — <strong>歡迎來店親眼挑選！</strong></p>
 </section>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" onclick="closeLB(event)">
+  <span class="lb-close" onclick="closeLB()">×</span>
+  <span class="lb-prev" onclick="moveLB(-1);event.stopPropagation()">‹</span>
+  <img id="lb-img" src="" alt="">
+  <span class="lb-next" onclick="moveLB(1);event.stopPropagation()">›</span>
+</div>
+
+<script>
+const photos = {
+  fan: ['images/fan/01.jpg','images/fan/02.jpg','images/fan/03.jpg','images/fan/04.jpg'],
+  pendant: ['images/pendant/01.jpg','images/pendant/02.jpg','images/pendant/03.jpg'],
+  wall: ['images/wall/01.jpg','images/wall/02.jpg'],
+  led: ['images/led/01.jpg','images/led/02.jpg']
+};
+let cur = {cat:'', idx:0};
+function openLB(cat, idx){
+  cur = {cat, idx};
+  document.getElementById('lb-img').src = photos[cat][idx];
+  document.getElementById('lb').classList.add('open');
+}
+function closeLB(e){
+  if(!e || e.target===document.getElementById('lb'))
+    document.getElementById('lb').classList.remove('open');
+}
+function moveLB(dir){
+  const arr = photos[cur.cat];
+  cur.idx = (cur.idx + dir + arr.length) % arr.length;
+  document.getElementById('lb-img').src = arr[cur.idx];
+}
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape') closeLB();
+  if(e.key==='ArrowLeft') moveLB(-1);
+  if(e.key==='ArrowRight') moveLB(1);
+});
+</script>
 
 <section class="why">
   <div class="section-header">
@@ -403,7 +403,7 @@ footer{background:var(--teal-deeper);padding:1.5rem 2.5rem;display:flex;justify-
           </div>
         </div>
       </div>
-      <a href="tel:0627255809" class="btn-teal">📞 06-272-5809</a>
+      <a href="tel:062725809" class="btn-teal">📞 06-272-5809</a>
     </div>
   </div>
 </section>
