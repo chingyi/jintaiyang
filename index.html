@@ -98,7 +98,13 @@ nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-b
 .why-text h3{font-weight:700;font-size:0.95rem;color:var(--teal-deeper);margin-bottom:0.4rem}
 .why-text p{font-size:0.82rem;color:var(--muted);line-height:1.7;font-weight:300}
 
-.contact{background:var(--teal);padding:4rem 2rem}
+.brands{background:var(--white);padding:4rem 2rem}
+.brands-grid{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.brand-card{border:1.5px solid var(--teal-pale);border-radius:10px;padding:1.5rem 1rem;text-align:center;transition:all 0.2s}
+.brand-card:hover{border-color:var(--teal);background:var(--teal-bg)}
+.brand-name{font-weight:700;font-size:1rem;color:var(--teal-deeper);margin-bottom:0.4rem}
+.brand-desc{font-size:0.75rem;color:var(--muted);font-weight:300;line-height:1.6}
+.brands-note{max-width:860px;margin:1.5rem auto 0;text-align:center;font-size:0.82rem;color:var(--muted);font-weight:300;line-height:1.8}
 .contact-inner{max-width:600px;margin:0 auto;text-align:center}
 .contact h2{font-weight:900;font-size:1.6rem;color:var(--white);margin-bottom:0.6rem}
 .contact-sub{font-size:0.88rem;color:rgba(255,255,255,0.8);margin-bottom:2rem;font-weight:300;line-height:1.8}
@@ -120,6 +126,7 @@ footer{background:var(--teal-deeper);padding:1.5rem 2.5rem;display:flex;justify-
   .trust-inner{grid-template-columns:repeat(2,1fr)}
   .intro-inner{grid-template-columns:1fr;gap:2rem}
   .cat-list{grid-template-columns:1fr}
+  .brands-grid{grid-template-columns:repeat(2,1fr)}
   .why-grid{grid-template-columns:1fr}
   footer{flex-direction:column;text-align:center}
 }
@@ -135,6 +142,7 @@ footer{background:var(--teal-deeper);padding:1.5rem 2.5rem;display:flex;justify-
   <div class="nav-links">
     <a href="#about">關於我們</a>
     <a href="#products">熱賣商品</a>
+    <a href="#brands">合作品牌</a>
     <a href="#contact">聯絡我們</a>
   </div>
 </nav>
@@ -380,7 +388,33 @@ document.addEventListener('keydown', e=>{
   </div>
 </section>
 
-<section class="contact" id="contact">
+<!-- 合作品牌 -->
+<section class="brands" id="brands">
+  <div class="section-header">
+    <div class="section-tag">合作品牌</div>
+    <h2 class="section-title">長期配合型錄</h2>
+    <p class="section-sub">以下品牌型錄店內皆有，歡迎來店現場翻閱選購</p>
+  </div>
+  <div class="brands-grid">
+    <div class="brand-card">
+      <div class="brand-name">威諾 WINNER</div>
+      <div class="brand-desc">綜合燈飾 · 吊扇 · 吸頂燈</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">金雙鶴</div>
+      <div class="brand-desc">綜合燈飾 · 古典 · 現代</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">金色年代</div>
+      <div class="brand-desc">精品燈飾 · 美術燈 · 水晶燈</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name">101 燈飾</div>
+      <div class="brand-desc">綜合燈飾 · 居家 · 商業空間</div>
+    </div>
+  </div>
+  <p class="brands-note">型錄款式眾多，店內無法全數陳列 — 看到喜歡的款式歡迎帶型錄來討論，我們協助報價訂購 😊</p>
+</section>
   <div class="contact-inner">
     <h2>歡迎來店或來電</h2>
     <p class="contact-sub">有問題直接打電話就好，我們就在店裡</p>
