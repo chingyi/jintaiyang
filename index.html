@@ -8,17 +8,16 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --teal:#3BBFBF;
-  --teal-dark:#2A9A9A;
-  --teal-deeper:#1E7A7A;
-  --teal-pale:#DFF4F4;
-  --teal-bg:#F0FAFA;
-  --white:#FFFFFF;
-  --text:#1A3A3A;
-  --muted:#4A8080;
+--teal:#3BBFBF;
+--teal-dark:#2A9A9A;
+--teal-deeper:#1E7A7A;
+--teal-pale:#DFF4F4;
+--teal-bg:#F0FAFA;
+--white:#FFFFFF;
+--text:#1A3A3A;
+--muted:#4A8080;
 }
 body{font-family:'Noto Sans TC',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;font-weight:400}
-
 nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-between;align-items:center;height:60px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
 .nav-brand{display:flex;align-items:center;gap:0.7rem}
 .nav-sun{width:34px;height:34px;background:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
@@ -26,7 +25,6 @@ nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-b
 .nav-links{display:flex}
 .nav-links a{padding:0 1rem;height:60px;display:flex;align-items:center;font-size:0.82rem;font-weight:400;letter-spacing:0.06em;color:rgba(255,255,255,0.9);text-decoration:none;transition:background 0.2s}
 .nav-links a:hover{background:var(--teal-dark)}
-
 .hero{background:var(--teal);padding:4rem 2rem 3.5rem;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-100px;right:-100px;width:350px;height:350px;border-radius:50%;background:rgba(255,255,255,0.06)}
 .hero-badge{display:inline-block;background:rgba(255,255,255,0.18);color:var(--white);font-size:0.78rem;letter-spacing:0.15em;padding:0.4rem 1.2rem;border-radius:20px;margin-bottom:1.5rem}
@@ -40,15 +38,12 @@ nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-b
 .btn-white:hover{background:var(--teal-pale)}
 .btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.6);padding:0.8rem 2rem;font-size:0.88rem;font-weight:400;letter-spacing:0.08em;border-radius:4px;cursor:pointer;transition:all 0.2s;text-decoration:none;display:inline-block}
 .btn-outline:hover{background:rgba(255,255,255,0.12)}
-
 .wave{display:block;width:100%;margin-bottom:-2px}
-
 .trust{background:var(--teal-bg);padding:2rem 2rem}
 .trust-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .trust-item{text-align:center;padding:1.2rem 0.5rem}
 .trust-num{font-weight:900;font-size:1.9rem;color:var(--teal);line-height:1}
 .trust-label{font-size:0.75rem;color:var(--muted);margin-top:0.4rem;line-height:1.5}
-
 .intro{background:var(--white);padding:4rem 2rem}
 .intro-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .intro-text h2{font-weight:900;font-size:1.7rem;color:var(--teal-deeper);margin-bottom:1.2rem;line-height:1.3}
@@ -59,7 +54,6 @@ nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-b
 .promise-list{list-style:none;display:flex;flex-direction:column;gap:0.9rem}
 .promise-list li{display:flex;align-items:flex-start;gap:0.8rem;font-size:0.88rem;line-height:1.6;font-weight:300;color:rgba(255,255,255,0.92)}
 .promise-dot{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.7rem;margin-top:1px}
-
 .products{background:var(--teal-bg);padding:4rem 2rem}
 .section-header{text-align:center;margin-bottom:2.5rem}
 .section-tag{display:inline-block;background:var(--teal);color:var(--white);font-size:0.7rem;font-weight:700;letter-spacing:0.18em;padding:0.3rem 0.9rem;border-radius:2px;margin-bottom:0.8rem}
@@ -89,7 +83,6 @@ nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-b
 .lb-close{position:absolute;top:1.2rem;right:1.5rem;color:white;font-size:2rem;cursor:pointer;line-height:1}
 .lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%);color:white;font-size:2.5rem;cursor:pointer;padding:0.5rem 1rem;background:rgba(255,255,255,0.1);border-radius:4px;user-select:none}
 .lb-prev{left:1rem}.lb-next{right:1rem}
-
 .why{background:var(--white);padding:4rem 2rem}
 .why-grid{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
 .why-card{display:flex;gap:1rem;align-items:flex-start;padding:1.5rem;border:1.5px solid var(--teal-pale);border-radius:10px;transition:border-color 0.2s}
@@ -97,7 +90,6 @@ nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-b
 .why-icon{width:44px;height:44px;background:var(--teal-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
 .why-text h3{font-weight:700;font-size:0.95rem;color:var(--teal-deeper);margin-bottom:0.4rem}
 .why-text p{font-size:0.82rem;color:var(--muted);line-height:1.7;font-weight:300}
-
 .brands{background:var(--teal-bg);padding:4rem 2rem}
 .brands-grid{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
 .brand-card{border:1.5px solid var(--teal-pale);border-radius:10px;padding:1.5rem 1rem;text-align:center;transition:all 0.2s}
@@ -117,218 +109,199 @@ nav{background:var(--teal);padding:0 2.5rem;display:flex;justify-content:space-b
 .c-value{font-size:0.92rem;color:var(--text);font-weight:700}
 .btn-teal{background:var(--teal);color:var(--white);padding:0.85rem 2.5rem;font-size:0.88rem;font-weight:700;letter-spacing:0.08em;border:none;border-radius:6px;cursor:pointer;transition:background 0.2s;text-decoration:none;display:inline-block}
 .btn-teal:hover{background:var(--teal-dark)}
-
 footer{background:var(--teal-deeper);padding:1.5rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.8rem}
 .footer-name{font-weight:900;font-size:1rem;color:var(--white);letter-spacing:0.06em}
 .footer-copy{font-size:0.7rem;color:rgba(255,255,255,0.55);letter-spacing:0.08em}
-
 @media(max-width:700px){
-  .nav-links{display:none}
-  .trust-inner{grid-template-columns:repeat(2,1fr)}
-  .intro-inner{grid-template-columns:1fr;gap:2rem}
-  .cat-list{grid-template-columns:1fr}
-  .brands-grid{grid-template-columns:repeat(2,1fr)}
-  .why-grid{grid-template-columns:1fr}
-  footer{flex-direction:column;text-align:center}
+.nav-links{display:none}
+.trust-inner{grid-template-columns:repeat(2,1fr)}
+.intro-inner{grid-template-columns:1fr;gap:2rem}
+.cat-list{grid-template-columns:1fr}
+.brands-grid{grid-template-columns:repeat(2,1fr)}
+.why-grid{grid-template-columns:1fr}
+footer{flex-direction:column;text-align:center}
 }
 </style>
 </head>
 <body>
-
 <nav>
-  <div class="nav-brand">
-    <div class="nav-sun">☀️</div>
-    <div class="nav-name">金太陽 燈飾照明</div>
-  </div>
-  <div class="nav-links">
-    <a href="#about">關於我們</a>
-    <a href="#products">熱賣商品</a>
-    <a href="#brands">合作品牌</a>
-    <a href="#contact">聯絡我們</a>
-  </div>
+<div class="nav-brand">
+<div class="nav-sun">☀️</div>
+<div class="nav-name">金太陽 燈飾照明</div>
+</div>
+<div class="nav-links">
+<a href="#about">關於我們</a>
+<a href="#products">熱賣商品</a>
+<a href="#brands">合作品牌</a>
+<a href="#contact">聯絡我們</a>
+</div>
 </nav>
 
 <section class="hero">
-  <div class="hero-badge">在地經營 30 年以上的家庭燈飾店</div>
-  <h1>
-    <small>古典吊扇 · 美術燈飾 · 批發零售</small>
-    金太陽<br>燈飾照明
-  </h1>
-  <p class="hero-desc">
-    老闆親自顧店、親自接待<br>
-    讓你的空間亮得舒服、買得放心
-  </p>
-  <div class="hero-pills">
-    <span class="hero-pill">🏠 住家裝潢</span>
-    <span class="hero-pill">⚡ 水電師傅採購</span>
-    <span class="hero-pill">💡 選燈諮詢</span>
-  </div>
-  <div class="hero-actions">
-    <button class="btn-white" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">看熱賣商品</button>
-    <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">來電洽詢</button>
-  </div>
+<div class="hero-badge">在地經營 30 年以上的家庭燈飾店</div>
+<h1>
+<small>古典吊扇 · 美術燈飾 · 批發零售</small>
+金太陽<br>燈飾照明
+</h1>
+<p class="hero-desc">老闆親自顧店、親自接待<br>讓你的空間亮得舒服、買得放心</p>
+<div class="hero-pills">
+<span class="hero-pill">🏠 住家裝潢</span>
+<span class="hero-pill">⚡ 水電師傅採購</span>
+<span class="hero-pill">💡 選燈諮詢</span>
+</div>
+<div class="hero-actions">
+<button class="btn-white" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">看熱賣商品</button>
+<button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">來電洽詢</button>
+</div>
 </section>
 
 <svg class="wave" viewBox="0 0 1200 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="background:#F0FAFA">
-  <path d="M0 0 Q300 50 600 25 Q900 0 1200 40 L1200 0 Z" fill="#3BBFBF"/>
+<path d="M0 0 Q300 50 600 25 Q900 0 1200 40 L1200 0 Z" fill="#3BBFBF"/>
 </svg>
 
 <section class="trust">
-  <div class="trust-inner">
-    <div class="trust-item">
-      <div class="trust-num">30+</div>
-      <div class="trust-label">年在地深耕<br>老顧客信賴</div>
-    </div>
-    <div class="trust-item">
-      <div class="trust-num">100+</div>
-      <div class="trust-label">位回頭老客人<br>口耳相傳的口碑</div>
-    </div>
-    <div class="trust-item">
-      <div class="trust-num">批發</div>
-      <div class="trust-label">水電師傅採購<br>歡迎來店拿貨</div>
-    </div>
-    <div class="trust-item">
-      <div class="trust-num">零售</div>
-      <div class="trust-label">單件歡迎選購<br>來店看實品</div>
-    </div>
-  </div>
+<div class="trust-inner">
+<div class="trust-item"><div class="trust-num">30+</div><div class="trust-label">年在地深耕<br>老顧客信賴</div></div>
+<div class="trust-item"><div class="trust-num">100+</div><div class="trust-label">位回頭老客人<br>口耳相傳的口碑</div></div>
+<div class="trust-item"><div class="trust-num">批發</div><div class="trust-label">水電師傅採購<br>歡迎來店拿貨</div></div>
+<div class="trust-item"><div class="trust-num">零售</div><div class="trust-label">單件歡迎選購<br>來店看實品</div></div>
+</div>
 </section>
 
 <section class="intro" id="about">
-  <div class="intro-inner">
-    <div class="intro-text">
-      <h2>兩個人的店，<br>三十年的用心</h2>
-      <p>金太陽是夫妻兩人一起顧的燈飾店，從選品到接待都是我們自己來，沒有員工，就是這樣。</p>
-      <p>做了三十幾年，客人很多都是老面孔，或是鄰居朋友介紹來的。我們不做什麼廣告，靠的就是<strong>做事實在、價格公道</strong>。</p>
-      <p>來看看就好也沒關係，<strong>不會一直推銷你</strong>。</p>
-    </div>
-    <div class="intro-card">
-      <div class="intro-card-title">我們一直在做的事</div>
-      <ul class="promise-list">
-        <li>
-          <div class="promise-dot">✓</div>
-          <span>就是老闆本人在顧店，有問題直接問就好</span>
-        </li>
-        <li>
-          <div class="promise-dot">✓</div>
-          <span>做了三十幾年，價格不會亂開</span>
-        </li>
-        <li>
-          <div class="promise-dot">✓</div>
-          <span>賣的東西自己也會用，不好的不賣</span>
-        </li>
-        <li>
-          <div class="promise-dot">✓</div>
-          <span>來看看就好也沒關係，不會一直推銷你</span>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="intro-inner">
+<div class="intro-text">
+<h2>兩個人的店，<br>三十年的用心</h2>
+<p>金太陽是夫妻兩人一起顧的燈飾店，從選品到接待都是我們自己來，沒有員工，就是這樣。</p>
+<p>做了三十幾年，客人很多都是老面孔，或是鄰居朋友介紹來的。我們不做什麼廣告，靠的就是<strong>做事實在、價格公道</strong>。</p>
+<p>來看看就好也沒關係，<strong>不會一直推銷你</strong>。</p>
+</div>
+<div class="intro-card">
+<div class="intro-card-title">我們一直在做的事</div>
+<ul class="promise-list">
+<li><div class="promise-dot">✓</div><span>就是老闆本人在顧店，有問題直接問就好</span></li>
+<li><div class="promise-dot">✓</div><span>做了三十幾年，價格不會亂開</span></li>
+<li><div class="promise-dot">✓</div><span>賣的東西自己也會用，不好的不賣</span></li>
+<li><div class="promise-dot">✓</div><span>來看看就好也沒關係，不會一直推銷你</span></li>
+</ul>
+</div>
+</div>
 </section>
 
 <section class="products" id="products">
-  <div class="section-header">
-    <div class="section-tag">商品分類</div>
-    <h2 class="section-title">店內品項</h2>
-    <p class="section-sub">點照片可放大瀏覽，更多款式歡迎來店看實品</p>
-  </div>
-  <div class="cat-list">
+<div class="section-header">
+<div class="section-tag">商品分類</div>
+<h2 class="section-title">店內品項</h2>
+<p class="section-sub">點照片可放大瀏覽，更多款式歡迎來店看實品</p>
+</div>
+<div class="cat-list">
 
-    <div class="cat-row">
-      <div class="cat-info">
-        <div class="cat-icon-wrap">
-          <svg viewBox="0 0 70 70" fill="none"><circle cx="35" cy="22" r="4" fill="#555" opacity="0.8"/><line x1="20" y1="26" x2="50" y2="26" stroke="#555" stroke-width="1.2" opacity="0.6"/><line x1="28" y1="20" x2="28" y2="26" stroke="#555" stroke-width="0.8"/><line x1="42" y1="20" x2="42" y2="26" stroke="#555" stroke-width="0.8"/><path d="M20 26 L15 36 Q14 44 35 44 Q56 44 55 36 L50 26 Z" stroke="#555" stroke-width="0.7" fill="rgba(80,80,80,0.15)"/><path d="M24 44 L22 56 M35 44 L35 58 M46 44 L48 56" stroke="#555" stroke-width="0.6" opacity="0.5"/></svg>
-        </div>
-        <div><div class="cat-name">吊扇</div><div class="cat-sub">現代款 · 傳統款</div></div>
-      </div>
-      <div class="cat-photos">
-        <div class="photo-item" onclick="openLB('fan',0)"><img src="images/fan/01.jpg" alt="吊扇1" loading="lazy"></div>
-        <div class="photo-item" onclick="openLB('fan',1)"><img src="images/fan/02.jpg" alt="吊扇2" loading="lazy"></div>
-      </div>
-      <div class="cat-footer"><a href="https://photos.app.goo.gl/w7cfLSWabaX6TPELA" target="_blank" class="see-all-btn">📷 看全部</a></div>
-    </div>
+<!-- 吊扇 -->
+<div class="cat-row">
+<div class="cat-info">
+<div class="cat-icon-wrap">
+<svg viewBox="0 0 70 70" fill="none"><circle cx="35" cy="22" r="4" fill="#555" opacity="0.8"/><line x1="20" y1="26" x2="50" y2="26" stroke="#555" stroke-width="1.2" opacity="0.6"/><line x1="28" y1="20" x2="28" y2="26" stroke="#555" stroke-width="0.8"/><line x1="42" y1="20" x2="42" y2="26" stroke="#555" stroke-width="0.8"/><path d="M20 26 L15 36 Q14 44 35 44 Q56 44 55 36 L50 26 Z" stroke="#555" stroke-width="0.7" fill="rgba(80,80,80,0.15)"/><path d="M24 44 L22 56 M35 44 L35 58 M46 44 L48 56" stroke="#555" stroke-width="0.6" opacity="0.5"/></svg>
+</div>
+<div><div class="cat-name">吊扇</div><div class="cat-sub">現代款 · 傳統款</div></div>
+</div>
+<div class="cat-photos">
+<div class="photo-item" onclick="openLB('fan',0)"><img src="images/fan/01.jpg" alt="吊扇1" loading="lazy"></div>
+<div class="photo-item" onclick="openLB('fan',1)"><img src="images/fan/02.jpg" alt="吊扇2" loading="lazy"></div>
+</div>
+<div class="cat-footer"><a href="https://photos.app.goo.gl/w7cfLSWabaX6TPELA" target="_blank" class="see-all-btn">📷 看全部</a></div>
+</div>
 
-    <div class="cat-row">
-      <div class="cat-info">
-        <div class="cat-icon-wrap">
-          <svg viewBox="0 0 70 70" fill="none"><line x1="35" y1="6" x2="35" y2="20" stroke="#555" stroke-width="1" opacity="0.7"/><path d="M26 20 Q22 32 20 38 Q20 50 35 50 Q50 50 50 38 Q48 32 44 20 Z" stroke="#555" stroke-width="0.8" fill="rgba(80,80,80,0.12)"/><ellipse cx="35" cy="42" rx="10" ry="3.5" fill="rgba(80,80,80,0.18)"/><path d="M28 50 Q32 60 35 62 Q38 60 42 50" stroke="#555" stroke-width="0.6" fill="none" opacity="0.6"/></svg>
-        </div>
-        <div><div class="cat-name">吊燈</div><div class="cat-sub">餐桌 · 玄關 · 客廳</div></div>
-      </div>
-      <div class="cat-photos">
-        <div class="photo-item" onclick="openLB('pendant',0)"><img src="images/pendant/01.jpg" alt="吊燈1" loading="lazy"></div>
-        <div class="photo-item" onclick="openLB('pendant',1)"><img src="images/pendant/02.jpg" alt="吊燈2" loading="lazy"></div>
-      </div>
-      <div class="cat-footer"><a href="https://photos.app.goo.gl/NmP2YHbKQQAK8Esn8" target="_blank" class="see-all-btn">📷 看全部</a></div>
-    </div>
+<!-- 吊燈 -->
+<div class="cat-row">
+<div class="cat-info">
+<div class="cat-icon-wrap">
+<svg viewBox="0 0 70 70" fill="none"><line x1="35" y1="6" x2="35" y2="20" stroke="#555" stroke-width="1" opacity="0.7"/><path d="M26 20 Q22 32 20 38 Q20 50 35 50 Q50 50 50 38 Q48 32 44 20 Z" stroke="#555" stroke-width="0.8" fill="rgba(80,80,80,0.12)"/><ellipse cx="35" cy="42" rx="10" ry="3.5" fill="rgba(80,80,80,0.18)"/><path d="M28 50 Q32 60 35 62 Q38 60 42 50" stroke="#555" stroke-width="0.6" fill="none" opacity="0.6"/></svg>
+</div>
+<div><div class="cat-name">吊燈</div><div class="cat-sub">餐桌 · 玄關 · 客廳</div></div>
+</div>
+<div class="cat-photos">
+<div class="photo-item" onclick="openLB('pendant',0)"><img src="images/pendant/01.jpg" alt="吊燈1" loading="lazy"></div>
+<div class="photo-item" onclick="openLB('pendant',1)"><img src="images/pendant/02.jpg" alt="吊燈2" loading="lazy"></div>
+</div>
+<div class="cat-footer"><a href="https://photos.app.goo.gl/NmP2YHbKQQAK8Esn8" target="_blank" class="see-all-btn">📷 看全部</a></div>
+</div>
 
-    <div class="cat-row">
-      <div class="cat-info">
-        <div class="cat-icon-wrap">
-          <svg viewBox="0 0 70 70" fill="none"><rect x="12" y="16" width="5" height="36" rx="2" fill="#555" opacity="0.45"/><line x1="17" y1="28" x2="28" y2="28" stroke="#555" stroke-width="1.2"/><path d="M28 20 Q44 20 46 28 Q48 38 42 42 Q36 46 28 42 Q24 36 28 28 Z" stroke="#555" stroke-width="0.8" fill="rgba(80,80,80,0.14)"/><circle cx="37" cy="33" r="3" fill="#555" opacity="0.75"/></svg>
-        </div>
-        <div><div class="cat-name">壁燈</div><div class="cat-sub">走廊 · 臥室 · 氛圍</div></div>
-      </div>
-      <div class="cat-photos">
-        <div class="photo-item" onclick="openLB('wall',0)"><img src="images/wall/01.jpg" alt="壁燈1" loading="lazy"></div>
-        <div class="photo-item" onclick="openLB('wall',1)"><img src="images/wall/02.jpg" alt="壁燈2" loading="lazy"></div>
-      </div>
-      <div class="cat-footer"><a href="https://photos.app.goo.gl/k7nQegBJxU3mR2WC7" target="_blank" class="see-all-btn">📷 看全部</a></div>
-    </div>
+<!-- 壁燈 -->
+<div class="cat-row">
+<div class="cat-info">
+<div class="cat-icon-wrap">
+<svg viewBox="0 0 70 70" fill="none"><rect x="12" y="16" width="5" height="36" rx="2" fill="#555" opacity="0.45"/><line x1="17" y1="28" x2="28" y2="28" stroke="#555" stroke-width="1.2"/><path d="M28 20 Q44 20 46 28 Q48 38 42 42 Q36 46 28 42 Q24 36 28 28 Z" stroke="#555" stroke-width="0.8" fill="rgba(80,80,80,0.14)"/><circle cx="37" cy="33" r="3" fill="#555" opacity="0.75"/></svg>
+</div>
+<div><div class="cat-name">壁燈</div><div class="cat-sub">走廊 · 臥室 · 氛圍</div></div>
+</div>
+<div class="cat-photos">
+<div class="photo-item" onclick="openLB('wall',0)"><img src="images/wall/01.jpg" alt="壁燈1" loading="lazy"></div>
+<div class="photo-item" onclick="openLB('wall',1)"><img src="images/wall/02.jpg" alt="壁燈2" loading="lazy"></div>
+</div>
+<div class="cat-footer"><a href="https://photos.app.goo.gl/k7nQegBJxU3mR2WC7" target="_blank" class="see-all-btn">📷 看全部</a></div>
+</div>
 
-    <div class="cat-row">
-      <div class="cat-info">
-        <div class="cat-icon-wrap">
-          <svg viewBox="0 0 70 70" fill="none"><rect x="20" y="20" width="30" height="5" rx="2" fill="#555" opacity="0.5"/><ellipse cx="35" cy="38" rx="16" ry="12" stroke="#555" stroke-width="0.8" fill="rgba(80,80,80,0.1)"/><circle cx="35" cy="38" r="6" fill="rgba(80,80,80,0.2)"/><circle cx="35" cy="38" r="3" fill="#555" opacity="0.8"/></svg>
-        </div>
-        <div><div class="cat-name">吸頂燈</div><div class="cat-sub">臥室 · 廁所 · 晶片型 · 燈泡型</div></div>
-      </div>
-      <div class="cat-photos cat-photos-empty"><span>照片即將上線</span></div>
-      <div class="cat-footer"><a href="https://photos.app.goo.gl/CEcHFioE1XBTdW4S7" target="_blank" class="see-all-btn">📷 看全部</a></div>
-    </div>
+<!-- 吸頂燈 -->
+<div class="cat-row">
+<div class="cat-info">
+<div class="cat-icon-wrap">
+<svg viewBox="0 0 70 70" fill="none"><rect x="20" y="20" width="30" height="5" rx="2" fill="#555" opacity="0.5"/><ellipse cx="35" cy="38" rx="16" ry="12" stroke="#555" stroke-width="0.8" fill="rgba(80,80,80,0.1)"/><circle cx="35" cy="38" r="6" fill="rgba(80,80,80,0.2)"/><circle cx="35" cy="38" r="3" fill="#555" opacity="0.8"/></svg>
+</div>
+<div><div class="cat-name">吸頂燈</div><div class="cat-sub">臥室 · 廁所 · 晶片型 · 燈泡型</div></div>
+</div>
+<div class="cat-photos">
+<div class="photo-item" onclick="openLB('ceiling',0)"><img src="images/ceiling/01.jpg" alt="吸頂燈1" loading="lazy"></div>
+<div class="photo-item" onclick="openLB('ceiling',1)"><img src="images/ceiling/02.jpg" alt="吸頂燈2" loading="lazy"></div>
+<div class="photo-item" onclick="openLB('ceiling',2)"><img src="images/ceiling/03.jpg" alt="吸頂燈3" loading="lazy"></div>
+</div>
+<div class="cat-footer"><a href="https://photos.app.goo.gl/CEcHFioE1XBTdW4S7" target="_blank" class="see-all-btn">📷 看全部</a></div>
+</div>
 
-    <div class="cat-row">
-      <div class="cat-info">
-        <div class="cat-icon-wrap">
-          <svg viewBox="0 0 70 70" fill="none"><rect x="20" y="22" width="30" height="4" rx="2" fill="#555" opacity="0.5"/><circle cx="35" cy="24" r="7" fill="rgba(80,80,80,0.18)" stroke="#555" stroke-width="0.8"/><circle cx="35" cy="24" r="3.5" fill="#555" opacity="0.85"/><path d="M25 26 L22 52 M35 26 L35 54 M45 26 L48 52" stroke="#555" stroke-width="0.5" opacity="0.35" stroke-dasharray="2,3"/></svg>
-        </div>
-        <div><div class="cat-name">LED 崁燈 · 投射燈 · 軌道燈</div><div class="cat-sub">節能 · 住宅 · 商辦</div></div>
-      </div>
-      <div class="cat-photos">
-        <div class="photo-item" onclick="openLB('led',0)"><img src="images/led/01.jpg" alt="LED1" loading="lazy"></div>
-        <div class="photo-item" onclick="openLB('led',1)"><img src="images/led/02.jpg" alt="LED2" loading="lazy"></div>
-      </div>
-      <div class="cat-footer"><a href="https://photos.app.goo.gl/hpQhJ2f6Hhk7nVUm8" target="_blank" class="see-all-btn">📷 看全部</a></div>
-    </div>
+<!-- LED -->
+<div class="cat-row">
+<div class="cat-info">
+<div class="cat-icon-wrap">
+<svg viewBox="0 0 70 70" fill="none"><rect x="20" y="22" width="30" height="4" rx="2" fill="#555" opacity="0.5"/><circle cx="35" cy="24" r="7" fill="rgba(80,80,80,0.18)" stroke="#555" stroke-width="0.8"/><circle cx="35" cy="24" r="3.5" fill="#555" opacity="0.85"/><path d="M25 26 L22 52 M35 26 L35 54 M45 26 L48 52" stroke="#555" stroke-width="0.5" opacity="0.35" stroke-dasharray="2,3"/></svg>
+</div>
+<div><div class="cat-name">LED 崁燈 · 投射燈 · 軌道燈</div><div class="cat-sub">節能 · 住宅 · 商辦</div></div>
+</div>
+<div class="cat-photos">
+<div class="photo-item" onclick="openLB('led',0)"><img src="images/led/01.jpg" alt="LED1" loading="lazy"></div>
+<div class="photo-item" onclick="openLB('led',1)"><img src="images/led/02.jpg" alt="LED2" loading="lazy"></div>
+</div>
+<div class="cat-footer"><a href="https://photos.app.goo.gl/hpQhJ2f6Hhk7nVUm8" target="_blank" class="see-all-btn">📷 看全部</a></div>
+</div>
 
-    <div class="cat-row">
-      <div class="cat-info">
-        <div class="cat-icon-wrap">
-          <svg viewBox="0 0 70 70" fill="none"><circle cx="35" cy="35" r="12" stroke="#555" stroke-width="1" fill="rgba(80,80,80,0.1)"/><circle cx="35" cy="35" r="6" fill="rgba(80,80,80,0.2)"/><line x1="35" y1="18" x2="35" y2="24" stroke="#555" stroke-width="1.2"/><line x1="35" y1="46" x2="35" y2="52" stroke="#555" stroke-width="1.2"/><line x1="18" y1="35" x2="24" y2="35" stroke="#555" stroke-width="1.2"/><line x1="46" y1="35" x2="52" y2="35" stroke="#555" stroke-width="1.2"/></svg>
-        </div>
-        <div><div class="cat-name">電燈泡 · 配件 · 零件</div><div class="cat-sub">各式燈泡 · 燈座 · 配線配件</div></div>
-      </div>
-      <div class="cat-photos cat-photos-empty"><span>照片即將上線</span></div>
-    </div>
+<!-- 配件 -->
+<div class="cat-row">
+<div class="cat-info">
+<div class="cat-icon-wrap">
+<svg viewBox="0 0 70 70" fill="none"><circle cx="35" cy="35" r="12" stroke="#555" stroke-width="1" fill="rgba(80,80,80,0.1)"/><circle cx="35" cy="35" r="6" fill="rgba(80,80,80,0.2)"/><line x1="35" y1="18" x2="35" y2="24" stroke="#555" stroke-width="1.2"/><line x1="35" y1="46" x2="35" y2="52" stroke="#555" stroke-width="1.2"/><line x1="18" y1="35" x2="24" y2="35" stroke="#555" stroke-width="1.2"/><line x1="46" y1="35" x2="52" y2="35" stroke="#555" stroke-width="1.2"/></svg>
+</div>
+<div><div class="cat-name">電燈泡 · 配件 · 零件</div><div class="cat-sub">各式燈泡 · 燈座 · 配線配件</div></div>
+</div>
+<div class="cat-photos cat-photos-empty"><span>照片即將上線</span></div>
+</div>
 
-  </div>
-  <p class="prod-note">以上僅為部分品項 — <strong>歡迎來店親眼挑選！</strong></p>
+</div>
+<p class="prod-note">以上僅為部分品項 — <strong>歡迎來店親眼挑選！</strong></p>
 </section>
 
 <!-- Lightbox -->
 <div class="lb" id="lb" onclick="closeLB(event)">
-  <span class="lb-close" onclick="closeLB()">×</span>
-  <span class="lb-prev" onclick="moveLB(-1);event.stopPropagation()">‹</span>
-  <img id="lb-img" src="" alt="">
-  <span class="lb-next" onclick="moveLB(1);event.stopPropagation()">›</span>
+<span class="lb-close" onclick="closeLB()">×</span>
+<span class="lb-prev" onclick="moveLB(-1);event.stopPropagation()">‹</span>
+<img id="lb-img" src="" alt="">
+<span class="lb-next" onclick="moveLB(1);event.stopPropagation()">›</span>
 </div>
 
 <script>
 const photos = {
-  fan: ['images/fan/01.jpg','images/fan/02.jpg','images/fan/03.jpg','images/fan/04.jpg'],
+  fan:     ['images/fan/01.jpg','images/fan/02.jpg','images/fan/03.jpg','images/fan/04.jpg'],
   pendant: ['images/pendant/01.jpg','images/pendant/02.jpg','images/pendant/03.jpg'],
-  wall: ['images/wall/01.jpg','images/wall/02.jpg'],
-  led: ['images/led/01.jpg','images/led/02.jpg']
+  wall:    ['images/wall/01.jpg','images/wall/02.jpg'],
+  ceiling: ['images/ceiling/01.jpg','images/ceiling/02.jpg','images/ceiling/03.jpg'],
+  led:     ['images/led/01.jpg','images/led/02.jpg']
 };
 let cur = {cat:'', idx:0};
 function openLB(cat, idx){
@@ -353,113 +326,52 @@ document.addEventListener('keydown', e=>{
 </script>
 
 <section class="why">
-  <div class="section-header">
-    <div class="section-tag">為什麼選我們</div>
-    <h2 class="section-title">小店的好，就是這樣</h2>
-  </div>
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="why-icon">😊</div>
-      <div class="why-text">
-        <h3>老闆親自在顧店</h3>
-        <p>不是員工、不是工讀生，就是老闆本人。有問題直接問，說什麼算什麼。</p>
-      </div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">💰</div>
-      <div class="why-text">
-        <h3>價格不會亂開</h3>
-        <p>做了三十幾年，進貨關係穩定，給你合理的價格，不跟你玩議價遊戲。</p>
-      </div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🔍</div>
-      <div class="why-text">
-        <h3>賣的東西自己會用</h3>
-        <p>不好的東西我們自己不會買，自然也不會賣。每一款都是我們認可才放上架的。</p>
-      </div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">⚡</div>
-      <div class="why-text">
-        <h3>水電師傅的好朋友</h3>
-        <p>常有水電師傅來店裡拿貨，熟門熟路。需要什麼直接說，備貨齊、拿了就走，不耽誤工時。</p>
-      </div>
-    </div>
-  </div>
+<div class="section-header">
+<div class="section-tag">為什麼選我們</div>
+<h2 class="section-title">小店的好，就是這樣</h2>
+</div>
+<div class="why-grid">
+<div class="why-card"><div class="why-icon">😊</div><div class="why-text"><h3>老闆親自在顧店</h3><p>不是員工、不是工讀生，就是老闆本人。有問題直接問，說什麼算什麼。</p></div></div>
+<div class="why-card"><div class="why-icon">💰</div><div class="why-text"><h3>價格不會亂開</h3><p>做了三十幾年，進貨關係穩定，給你合理的價格，不跟你玩議價遊戲。</p></div></div>
+<div class="why-card"><div class="why-icon">🔍</div><div class="why-text"><h3>賣的東西自己會用</h3><p>不好的東西我們自己不會買，自然也不會賣。每一款都是我們認可才放上架的。</p></div></div>
+<div class="why-card"><div class="why-icon">⚡</div><div class="why-text"><h3>水電師傅的好朋友</h3><p>常有水電師傅來店裡拿貨，熟門熟路。需要什麼直接說，備貨齊、拿了就走，不耽誤工時。</p></div></div>
+</div>
 </section>
 
-<!-- 合作品牌 -->
 <section class="brands" id="brands">
-  <div class="section-header">
-    <div class="section-tag">合作品牌</div>
-    <h2 class="section-title">長期配合型錄</h2>
-    <p class="section-sub">以下品牌型錄店內皆有，歡迎來店現場翻閱選購</p>
-  </div>
-  <div class="brands-grid">
-    <div class="brand-card">
-      <div class="brand-name">威諾 WINNER</div>
-      <div class="brand-desc">綜合燈飾 · 吊扇 · 吸頂燈</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-name">金雙鶴</div>
-      <div class="brand-desc">綜合燈飾 · 古典 · 現代</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-name">金色年代</div>
-      <div class="brand-desc">精品燈飾 · 美術燈 · 水晶燈</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-name">101 燈飾</div>
-      <div class="brand-desc">綜合燈飾 · 居家 · 商業空間</div>
-    </div>
-  </div>
-  <p class="brands-note">型錄款式眾多，店內無法全數陳列 — 看到喜歡的款式歡迎帶型錄來討論，我們協助報價訂購 😊</p>
+<div class="section-header">
+<div class="section-tag">合作品牌</div>
+<h2 class="section-title">長期配合型錄</h2>
+<p class="section-sub">以下品牌型錄店內皆有，歡迎來店現場翻閱選購</p>
+</div>
+<div class="brands-grid">
+<div class="brand-card"><div class="brand-name">威諾 WINNER</div><div class="brand-desc">綜合燈飾 · 吊扇 · 吸頂燈</div></div>
+<div class="brand-card"><div class="brand-name">金雙鶴</div><div class="brand-desc">綜合燈飾 · 古典 · 現代</div></div>
+<div class="brand-card"><div class="brand-name">金色年代</div><div class="brand-desc">精品燈飾 · 美術燈 · 水晶燈</div></div>
+<div class="brand-card"><div class="brand-name">101 燈飾</div><div class="brand-desc">綜合燈飾 · 居家 · 商業空間</div></div>
+</div>
+<p class="brands-note">型錄款式眾多，店內無法全數陳列 — 看到喜歡的款式歡迎帶型錄來討論，我們協助報價訂購 😊</p>
 </section>
+
 <section class="contact" id="contact">
-  <div class="contact-inner">
-    <h2>歡迎來店或來電</h2>
-    <p class="contact-sub">有問題直接打電話就好，我們就在店裡</p>
-    <div class="contact-box">
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="c-icon">📍</div>
-          <div>
-            <span class="c-label">門市地址</span>
-            <span class="c-value">台南市永康區永大路二段966號</span>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="c-icon">📞</div>
-          <div>
-            <span class="c-label">聯絡電話</span>
-            <span class="c-value">06-272-5809</span>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="c-icon">🕐</div>
-          <div>
-            <span class="c-label">營業時間</span>
-            <span class="c-value">每日 09:00 – 21:00</span>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="c-icon">💡</div>
-          <div>
-            <span class="c-label">小提醒</span>
-            <span class="c-value" style="font-weight:400;font-size:0.85rem;color:#4A8080">偶爾臨時外出，建議來電確認再出發，以免撲空</span>
-          </div>
-        </div>
-      </div>
-      <a href="tel:062725809" class="btn-teal">📞 06-272-5809</a>
-    </div>
-  </div>
+<div class="contact-inner">
+<h2>歡迎來店或來電</h2>
+<p class="contact-sub">有問題直接打電話就好，我們就在店裡</p>
+<div class="contact-box">
+<div class="contact-items">
+<div class="contact-item"><div class="c-icon">📍</div><div><span class="c-label">門市地址</span><span class="c-value">台南市永康區永大路二段966號</span></div></div>
+<div class="contact-item"><div class="c-icon">📞</div><div><span class="c-label">聯絡電話</span><span class="c-value">06-272-5809</span></div></div>
+<div class="contact-item"><div class="c-icon">🕐</div><div><span class="c-label">營業時間</span><span class="c-value">每日 09:00 – 21:00</span></div></div>
+<div class="contact-item"><div class="c-icon">💡</div><div><span class="c-label">小提醒</span><span class="c-value" style="font-weight:400;font-size:0.85rem;color:#4A8080">偶爾臨時外出，建議來電確認再出發，以免撲空</span></div></div>
+</div>
+<a href="tel:062725809" class="btn-teal">📞 06-272-5809</a>
+</div>
+</div>
 </section>
 
 <footer>
-  <div class="footer-name">☀️ 金太陽燈飾照明</div>
-  <div class="footer-copy">© 2025 金太陽燈飾照明 · jintaiyang.tw</div>
+<div class="footer-name">☀️ 金太陽燈飾照明</div>
+<div class="footer-copy">© 2025 金太陽燈飾照明 · jintaiyang.tw</div>
 </footer>
-
 </body>
 </html>
